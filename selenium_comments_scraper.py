@@ -8,8 +8,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common import exceptions
 import pandas as pd
 
-comments = []
-
 # enable the headless mode
 options = Options()
 options.add_argument("--headless=new")
@@ -21,79 +19,16 @@ def scrape(youtube_video_url):
         driver.get(youtube_video_url)
         driver.maximize_window()
 
-        # wait for YouTube to load the page data
+        # wait for YouTube to load the page comments
         WebDriverWait(driver, 15).until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, 'h1.ytd-watch-metadata'))
         )
 
-        # wait = WebDriverWait(driver, 30)
-
-        video = {}
-        channel = {}
-
-        # title = driver \
-        #     .find_element(By.CSS_SELECTOR, 'h1.style-scope.ytd-watch-metadata') \
-        #     .text
-        #
-        # # scrape the channel info attributes
-        # channel_element = driver \
-        #     .find_element(By.ID, 'owner')
-        # channel_url = channel_element \
-        #     .find_element(By.CSS_SELECTOR, 'a.yt-simple-endpoint') \
-        #     .get_attribute('href')
-        # channel_name = channel_element \
-        #     .find_element(By.ID, 'channel-name') \
-        #     .text
-        # channel_image = channel_element \
-        #     .find_element(By.ID, 'img') \
-        #     .get_attribute('src')
-        # channel_subs = channel_element \
-        #     .find_element(By.ID, 'owner-sub-count') \
-        #     .text \
-        #     .replace(' subscribers', '')
-        #
-        # channel["channel_url"] = channel_url
-        # channel["channel_name"] = channel_name
-        # channel["channel_subs"] = channel_subs
-        #
-        # # click the description section to expand it
-        # driver.find_element(By.ID, 'description-inline-expander').click()
-        #
-        # info_container_elements = driver \
-        #     .find_elements(By.CSS_SELECTOR, '#info-container span')
-        #
-        # views = info_container_elements[0] \
-        #     .text \
-        #     .replace(' views', '')
-        #
-        # publication_date = info_container_elements[2] \
-        #     .text
-        #
-        # description = driver \
-        #     .find_element(By.CSS_SELECTOR, '#description-inline-expander .ytd-text-inline-expander span') \
-        #     .text
-        #
-        # likes = driver \
-        #     .find_elements(By.CSS_SELECTOR, '.yt-spec-button-shape-next__button-text-content')[4]\
-        #     .text
-        #
-        #
-        # video['url'] = youtube_video_url
-        # video['title'] = title
-        # video['channel'] = channel
-        # video['views'] = views
-        # video['publication_date'] = publication_date
-        # video['description'] = description
-        # video['likes'] = likes
-        #
-        # for key, value in video.items():
-        #     print(key, value)
-        #
         WebDriverWait(driver, 15).until(
             EC.visibility_of_element_located((By.XPATH, "//*[@id='more-replies']"))
         )
         more_replies = driver.find_elements(By.XPATH, "//*[@id='more-replies']")
-        print(len(more_replies))
+        # print(len(more_replies))
 
         for more_reply in more_replies:
             WebDriverWait(driver, 20).until(
@@ -113,15 +48,9 @@ def scrape(youtube_video_url):
             # Calculate new scroll height and compare with last scroll height
             new_height = driver.execute_script("return document.documentElement.scrollHeight")
             if new_height == last_height:
-                print("No more comments required to render!")
+                # print("No more comments required to render!")
                 break
             last_height = new_height
-
-        # reply_elements = driver.find_elements(By.CSS_SELECTOR, 'button[class*="yt-spec-button-shape-next"]')
-        # reply_elements = driver.find_elements(By.ID, 'more-replies')
-
-        # elem = (By.XPATH, "//*[@class='more-button' and @id='more-replies']")
-
 
         try:
             # Extract the element that refers to the comments
@@ -149,6 +78,7 @@ def scrape(youtube_video_url):
                         is_looped = True
 
                     comment_text = comment_element.text
+                    comment_text = comment_text.strip()
                     print(comment_text)
                     comments.append(comment_text)
 
@@ -158,9 +88,29 @@ def scrape(youtube_video_url):
             print(error)
 
 
+def reinitialise():
+    return [], [], 0
+
+
 if __name__ == "__main__":
-    YOUTUBE_URL = "https://www.youtube.com/watch?v=ehSr-HIKVMw"
-    comments = scrape(YOUTUBE_URL)
-    print("Number of comments: ", len(comments))
-    df_comments = pd.DataFrame(comments)
-    df_comments.to_csv('comments_selenium.csv', index=False)
+    # CREATOR_NAMES = ["itsclarityco", "justsaying", "welloshow"]
+    CREATOR_NAMES = ["itsclarityco"]
+
+    for creator in CREATOR_NAMES:
+        url_file_name = "./data/youtube_" + creator + ".txt"
+        url_file = open(url_file_name, "r")
+
+        urls, comments, total_num_comments = reinitialise()
+
+        for url in url_file.readlines():
+            urls.append(url.strip())
+
+        for url in urls:
+            comments = scrape(url)
+            print("Number of comments: ", len(comments))
+            total_num_comments += len(comments)
+            print("Total number of comments scraped so far: ", total_num_comments)
+            df_comments = pd.DataFrame(comments)
+
+            csv_file_name = './comments/youtube_' + creator + '.csv'
+            df_comments.to_csv(csv_file_name, mode='a', index=True)
