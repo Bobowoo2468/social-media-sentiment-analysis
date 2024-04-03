@@ -94,7 +94,7 @@ def reinitialise():
 
 if __name__ == "__main__":
     # CREATOR_NAMES = ["itsclarityco", "justsaying", "welloshow"]
-    CREATOR_NAMES = ["itsclarityco"]
+    CREATOR_NAMES = ["welloshow", "thebackstagebunch"]
 
     for creator in CREATOR_NAMES:
         url_file_name = "./data/youtube_" + creator + ".txt"

@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 ms_token = os.environ.get("MS_TOKEN", None)
+SPLICE_START = 22
+SPLICE_END = -1
 
 
 async def get_comments(video_id):
@@ -25,7 +27,7 @@ def reinitialise():
 
 if __name__ == "__main__":
     # CREATOR_NAMES = ["itsclarityco", "justsaying", "welloshow"]
-    CREATOR_NAMES = ["itsclarityco"]
+    CREATOR_NAMES = ["thebackstagebunch"]
 
     for creator in CREATOR_NAMES:
         url_file_name = "./data/tiktok_" + creator + ".txt"
@@ -34,7 +36,12 @@ if __name__ == "__main__":
         video_ids, total_num_comments = reinitialise()
 
         for video_id in url_file.readlines():
-            video_ids.append(video_id.strip())
+            video_ids.append(video_id)
+            # try:
+            #     video_id = video_id.strip().split("video/")[1]
+            #     video_ids.append(video_id)
+            # except IndexError:
+            #     print("Parsing video id error")
 
         for video_id in video_ids:
             video_comments = asyncio.run(get_comments(video_id))
