@@ -26,8 +26,7 @@ def reinitialise():
 
 
 if __name__ == "__main__":
-    # CREATOR_NAMES = ["itsclarityco", "justsaying", "welloshow"]
-    CREATOR_NAMES = ["thebackstagebunch"]
+    CREATOR_NAMES = ["itsclarityco", "thebackstagebunch", "welloshow"]
 
     for creator in CREATOR_NAMES:
         url_file_name = "./data/tiktok_" + creator + ".txt"
@@ -36,7 +35,7 @@ if __name__ == "__main__":
         video_ids, total_num_comments = reinitialise()
 
         for video_id in url_file.readlines():
-            video_ids.append(video_id)
+            video_ids.append(video_id.strip())
             # try:
             #     video_id = video_id.strip().split("video/")[1]
             #     video_ids.append(video_id)

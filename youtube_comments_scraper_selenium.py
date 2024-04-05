@@ -1,4 +1,6 @@
 import time
+
+import selenium.common.exceptions
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -20,19 +22,23 @@ def scrape(youtube_video_url):
         driver.maximize_window()
 
         # wait for YouTube to load the page comments
-        WebDriverWait(driver, 15).until(
-            EC.visibility_of_element_located((By.CSS_SELECTOR, 'h1.ytd-watch-metadata'))
-        )
+        try:
+            WebDriverWait(driver, 15).until(
+                EC.visibility_of_element_located((By.CSS_SELECTOR, 'h1.ytd-watch-metadata'))
+            )
 
-        WebDriverWait(driver, 15).until(
-            EC.visibility_of_element_located((By.XPATH, "//*[@id='more-replies']"))
-        )
-        more_replies = driver.find_elements(By.XPATH, "//*[@id='more-replies']")
-        # print(len(more_replies))
+            WebDriverWait(driver, 15).until(
+                EC.visibility_of_element_located((By.XPATH, "//*[@id='more-replies']"))
+            )
+            more_replies = driver.find_elements(By.XPATH, "//*[@id='more-replies']")
+            # print(len(more_replies))
 
-        for more_reply in more_replies:
-            WebDriverWait(driver, 20).until(
-                EC.element_to_be_clickable(more_reply)).click()
+            for more_reply in more_replies:
+                WebDriverWait(driver, 20).until(
+                    EC.element_to_be_clickable(more_reply)).click()
+
+        except selenium.common.exceptions.TimeoutException:
+            print("No element to render")
 
         # Scroll all the way down to the bottom in order to get all the
         # elements loaded (since Youtube dynamically loads them).
@@ -93,8 +99,8 @@ def reinitialise():
 
 
 if __name__ == "__main__":
-    # CREATOR_NAMES = ["itsclarityco", "justsaying", "welloshow"]
-    CREATOR_NAMES = ["welloshow", "thebackstagebunch"]
+    # CREATOR_NAMES = ["itsclarityco", "thebackstagebunch", "welloshow"]
+    CREATOR_NAMES = ["welloshow"]
 
     for creator in CREATOR_NAMES:
         url_file_name = "./data/youtube_" + creator + ".txt"
