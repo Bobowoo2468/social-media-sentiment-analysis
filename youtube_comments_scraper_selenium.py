@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common import exceptions
 import pandas as pd
+from cleantext import clean
 
 # enable the headless mode
 options = Options()
@@ -84,9 +85,14 @@ def scrape(youtube_video_url):
                         is_looped = True
 
                     comment_text = comment_element.text
-                    comment_text = comment_text.strip()
-                    print(comment_text)
-                    comments.append(comment_text)
+                    parsed_comment = parse_comment(comment_text)
+                    parsed_comment = parsed_comment.strip()
+                    print(parsed_comment)
+
+                    if len(parsed_comment.strip()) != 0:
+                        comments.append(comment_text)
+                    else:
+                        print("Empty comment, not added into scraped comments!")
 
         except exceptions.NoSuchElementException:
             # in case Youtube changes their HTML layouts
@@ -98,9 +104,14 @@ def reinitialise():
     return [], [], 0
 
 
+def parse_comment(comment):
+    parsed_comment = clean(comment, no_emoji=True)
+    return parsed_comment
+
+
 if __name__ == "__main__":
-    # CREATOR_NAMES = ["itsclarityco", "thebackstagebunch", "welloshow"]
-    CREATOR_NAMES = ["welloshow"]
+    CREATOR_NAMES = ["itsclarityco", "thebackstagebunch", "welloshow"]
+    # CREATOR_NAMES = ["welloshow"]
 
     for creator in CREATOR_NAMES:
         url_file_name = "./data/youtube_" + creator + ".txt"
