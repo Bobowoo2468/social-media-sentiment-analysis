@@ -25,5 +25,5 @@ if __name__ == "__main__":
     df_master = pd.DataFrame(data=master_data)
     df_master_shuffled = shuffle(df_master)
 
-    csv_file_name = './data/sample_comments.csv'
+    csv_file_name = './data/sample_comments_2.csv'
     df_master_shuffled.to_csv(csv_file_name, index=True)

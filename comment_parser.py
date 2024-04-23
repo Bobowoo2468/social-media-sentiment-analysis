@@ -8,10 +8,10 @@ from googletrans import Translator, constants
 data = pd.read_csv('./comments/youtube_thebackstagebunch.csv')
 nlp = spacy.load("en_core_web_sm")
 
-FILTER_WORDS = ['hi', 'im']
+FILTER_WORDS = ['hi', 'im', 'HAHAHA']
 
 
-def clean_comment(comment):
+def clean_and_stem_comment(comment):
     comment = comment.lower()
 
     # remove line breaks
@@ -34,22 +34,23 @@ def clean_comment(comment):
 
     else:
         cleaned_comment = nlp(' '.join(comment_filtered))
-        # comment_stemmed = [y.lemma_ for y in cleaned_comment]
-        # comment_stemmed = ' '.join(comment_stemmed)
-        # print(comment_stemmed)
-        return cleaned_comment
+        comment_stemmed = [y.lemma_ for y in cleaned_comment]
+        comment_stemmed = ' '.join(comment_stemmed)
+        return comment_stemmed
 
 
 def translate_comment(comment):
     translator = Translator()
     translated_comment = translator.translate(comment)
-    if translated_comment.src != "en":
-        print(
-            f"{translated_comment.origin} ({translated_comment.src}) --> {translated_comment.text} ({translated_comment.dest})")
+    # if translated_comment.src != "en":
+    #     print(
+    #         f"{translated_comment.origin} ({translated_comment.src}) --> {translated_comment.text} ({translated_comment.dest})")
     return translated_comment
 
 
 if __name__ == "__main__":
     for comment in data['Comment']:
-        cleaned_comment = clean_comment(comment)
-        translate_comment(cleaned_comment)
+        translated_comment = translate_comment(comment).text
+        parsed_comment = clean_and_stem_comment(translated_comment)
+        if parsed_comment is not None:
+            print(parsed_comment)
