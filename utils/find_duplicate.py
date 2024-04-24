@@ -1,5 +1,6 @@
 import pandas as pd
 
+FILE_NAME = 'test.csv'
 df = pd.read_csv('test.csv')
 duplicated_comments = []
 duplicated_comments_indexes = []
