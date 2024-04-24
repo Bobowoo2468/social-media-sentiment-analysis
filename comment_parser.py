@@ -26,12 +26,18 @@ def clean_comment(comment):
     # remove line breaks
     comment = re.sub(r'\n', '', comment)
 
+    # remove any tags
+    comment = comment.split()
+    comment = [w for w in comment if not w.startswith("@")]
+    comment = ' '.join(comment)
+
     # remove punctuation with regex
     translator = str.maketrans('', '', string.punctuation)
     comment = comment.translate(translator)
 
     # remove stop words
     comment = comment.split()
+
     words_to_filter = nltk.corpus.stopwords.words("english")
     words_to_filter += FILTER_WORDS
 
@@ -52,6 +58,10 @@ def clean_comment(comment):
 
 def translate_comment(comment):
     translator = Translator()
+
+    if len(comment) == 0:
+        return ""
+
     translated_comment = translator.translate(comment)
     # if translated_comment.src != "en":
     #     print(
@@ -70,6 +80,10 @@ def comment_toxicity(comment):
         return "y"
     else:
         return "n"
+
+
+def full_comment_toxicity(comment):
+    return toxicity_analyzer.predict(comment)
 
 
 if __name__ == "__main__":
