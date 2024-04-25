@@ -8,20 +8,20 @@ Index,Comment,Sentiment,Toxicity
 6,never heard of it called as the prawn capital,pos,n
 7,what is the name of this beautiful interviewer?,pos,n
 8,@jingyeah,neu,n
-9,when i went to sg some guys were really good looking.,pos,y
+9,when i went to sg some guys were really good looking.,pos,n
 10,who is he,neu,n
 11,how about singapore gals lol,neu,n
 12,@jeong_yun.o ik u'll beg to disagree wahahhaha,pos,n
 13,ive been to singapore and i must say as someone who visited many countries yall have the most diverse cuisine and culture bc its all cultures in one,neu,n
 14,"that's very true gurl, best believe",neu,n
-15,@soo,neu,y
+15,@soo,neu,n
 16,i thought it's cuz we always say 'sia',pos,n
 17,@j0_002 thoughts? hahahahaha,neg,n
 18,@cadhlahall nooo,pos,y
 19,"in thailand, we call ""pla salid"". it can be used for both, man and woman.",neu,n
 20,@suz true?,neu,n
-21,@ so true though,neu,y
-22,we're 13% millionaires by next year.,neu,n
+21,@ so true though,neu,n
+22,we're 13% millionaires by next year.,neg,n
 23,"""hipon"" here in the philippines",neu,n
 24,"it's true tho, look at sg celebrities",neu,n
 25,omg. that prawn reference originated here in the philippines,neu,n
@@ -35,10 +35,10 @@ Index,Comment,Sentiment,Toxicity
 33,in my country singapore is the melting pot of asia,neu,n
 34,totally agreeee on the take on sg men,neu,n
 35,oh no!!!,neu,n
-36,really??? i think they're pretty cute tho,neu,y
+36,really??? i think they're pretty cute tho,neu,n
 37,i think i'm in love with him oh my gosh,neu,n
 38,@herlene nicole budol... watch this,neu,n
-39,hard watch,neu,y
+39,hard watch,neu,n
 40,i stay 8yrs in singapore but i never heard this saying.,neu,n
 41,truth,neu,n
 42,well singaporean people is,neu,n
@@ -50,13 +50,13 @@ Index,Comment,Sentiment,Toxicity
 48,okay but @titus low is an exception!,neu,n
 49,wow,neu,n
 50,isn't this a g thing?,neu,n
-51,never heard it like that about singaporean men,neu,y
-52,we call that 'hipon' in philippines,neu,n
+51,never heard it like that about singaporean men,neu,n
+52,we call that 'hipon' in philippines,neu,y
 53,he just outed himself :),neu,n
 54,we dont know that...,neu,n
 55,kinda true,pos,n
 56,he's very handsome,neu,n
-57,no... they are so handsome.,neu,y
+57,no... they are so handsome.,neu,n
 58,she dissed her own men and tried to pretend it she didn't intend to,neu,n
 59,this man is gorgeous tho??,neu,n
 60,i guess most of his friends overseas are filipinos. the shrimp (hipon) reference is very popular in the philippines,neu,n
@@ -72,7 +72,7 @@ Index,Comment,Sentiment,Toxicity
 70,i thought it was about selling a lot of prawns,neu,n
 71,omfg hes so cute @softpastel7 lol,neg,n
 72,who's he? he fine,pos,n
-73,very hipon? lol,pos,n
+73,very hipon? lol,pos,y
 74,heard this before,neg,n
 75,i like singaporean guy and he's cute,neu,n
 76,shellfish was a good one tho haha,neu,n
@@ -91,9 +91,9 @@ Index,Comment,Sentiment,Toxicity
 89,so many layers packed in a prawn metaphor lol,neu,n
 90,"heard about this before but in thai it's gourami or plaaslid..if you search this word in thai, you won't see the head.",neg,n
 91,the accent killing me,neg,n
-92,i found they look charming,neu,y
-93,"nope, the singaporians look great :3",neg,y
-94,i think singapore guys look good though.,neu,n
+92,i found they look charming,neu,n
+93,"nope, the singaporians look great :3",neg,n
+94,i think singapore guys look good though.,neu,y
 95,this guy is very good looking. what's his name? actor?,pos,n
 96,i went to sg and jusko left n right pogi,neu,n
 97,*looks around* how come the guy friends around me are all not muscular???,pos,n
@@ -117,7 +117,7 @@ he's so handsome though",neu,n
 114,ouch.,neu,n
 115,me too.i also never heard of it the prawn capital at all.,neu,n
 116,@arya chen i know someone,neg,n
-117,"in the philippines, it's called ""hipon""",pos,n
+117,"in the philippines, it's called ""hipon""",pos,y
 118,its better than if they call you pusit or calamares lol,pos,n
 119,"went thru the pandemic in sg and id call it ""the rock""",pos,n
 120,"hahaha in the ph, we call them ""hipon""",pos,n
@@ -146,10 +146,10 @@ saying",neu,n
 142,girls and guy all so-so,neu,n
 143,"i find singaporean millennials more relateable than some asian australians i've met. but but its definitely ""sterile"" according to some.",neu,n
 144,the amount of singaporean guys i've encountered or seen have always been very good looking,neu,n
-145,agreed,neu,y
+145,agreed,neu,n
 146,it's ok got money can alr,neg,n
 147,what i heard was singlish or kiasu... never heard of prawn,neg,n
-148,"i never heard the term ""es camaron/camaroncito"" explained in english and idk what to do with myself anymore",neu,y
+148,"i never heard the term ""es camaron/camaroncito"" explained in english and idk what to do with myself anymore",neu,n
 149,"well, this guy is an exception of course",neu,n
 150,"the guy kinda looks like lee min ho from the side profile, it might be the hair cut idk",neu,n
 151,i just like the singaporian accent! i like the way they speak english!,pos,n
@@ -158,7 +158,7 @@ saying",neu,n
 154,i'm dead,neu,n
 155,i've never heard of the prawn capital,neu,n
 156,never heard that ever,neu,n
-157,you need better friends.,neu,n
+157,you need better friends.,neu,y
 158,"so true, sorry",neu,n
 159,well he's beautiful,pos,n
 160,i have to visit yet. vegan so not looking at prawns i have a picture of beautiful vegetation and music and warmth,neg,n
@@ -206,20 +206,20 @@ saying",neu,n
 6,@hyunlix hah??!deck??,pos,n
 7,brightwin,pos,n
 8,bright weh,neu,n
-9,bright... frank ocean,pos,y
+9,bright... frank ocean,pos,n
 10,loveuuu bright,neu,n
 11,not me downloading pink and white,neu,n
 12,love u bright!,pos,n
 13,frank ocean!,neu,n
 14,bright,neu,n
-15,iloveyou bright,neu,y
+15,iloveyou bright,neu,n
 16,bright listening to frank ocean shsjsjdjdj,pos,n
 17,bright!!! my favourite thai artis,neg,n
 18,deck........of cards *grins*,pos,y
 19,idjsjsj amen bright,neu,n
 20,bright do you miss tu???,neu,n
-21,bright what did you say,neu,y
-22,this deck.......of cards,neu,n
+21,bright what did you say,neu,n
+22,this deck.......of cards,neg,n
 23,comey betul senyumnya yang last tu aque cair la hahahahshshsh,neu,n
 24,bright,neu,n
 25,ayyy its bright,neu,n
@@ -233,10 +233,10 @@ saying",neu,n
 33,bright my idola,neu,n
 34,@delulu seven days a week bright?,neu,n
 35,frank?!! frank ocean???!!!,neu,n
-36,okkokokok bright,neu,y
+36,okkokokok bright,neu,n
 37,can u do win like same as bright?,neu,n
 38,@riel2201 hahahaha deck...of cards,neu,n
-39,brooo whens f4 thailand seson 2 happening,neu,y
+39,brooo whens f4 thailand seson 2 happening,neu,n
 40,i love bright so much so cute this man gives me all the feels i love this,neu,n
 41,frank ocean?? hes so real for that,neu,n
 42,he's like talking to me personally or i'm in my delulu?,neu,n
@@ -248,13 +248,13 @@ saying",neu,n
 48,season 2!,neu,n
 49,"""the first you have to do whne u first wake up"" bright:""brush ur teeth"" i can't-",neu,n
 50,"""deck""",neu,n
-51,he's so cute,neu,y
-52,suddenly i'm a saxophone player.,neu,n
+51,he's so cute,neu,n
+52,suddenly i'm a saxophone player.,neu,y
 53,that's so silly i like frank ocean to we should get married,neu,n
 54,bright has got unwavering confident to go through everything from his all experiences. i love and have respect for his way of thinking,neu,n
 55,iloveyouuuuu my loveeee,pos,n
 56,"thank youu clarityyy, this video is reminding me that i need to study for my exams tom, thanks to bright",neu,n
-57,he loves frank oceannnn,neu,y
+57,he loves frank oceannnn,neu,n
 58,his english,neu,n
 59,@daphpark its bright omg,neu,n
 60,deck???,neu,n
@@ -270,7 +270,7 @@ saying",neu,n
 70,deck????,neu,n
 71,deck of cards,neg,n
 72,what if my achievement is you?,pos,n
-73,he's so pookie,pos,n
+73,he's so pookie,pos,y
 74,deck of- what?,neg,n
 75,baby,neu,n
 76,i just see thyme,neu,n
@@ -289,9 +289,9 @@ saying",neu,n
 89,watching this while drinking wine and only 4.5 hours sleep last night,neu,n
 90,sleep more. yaasss!!!,neg,n
 91,deck of cards?,neg,n
-92,""" acting or singing "" just acting pls",neu,y
-93,my man,neg,y
-94,"he's so cutee, i love the interview",neu,n
+92,""" acting or singing "" just acting pls",neu,n
+93,my man,neg,n
+94,"he's so cutee, i love the interview",neu,y
 95,always an encouragement please take care of your health.,pos,n
 96,we will always be his driving force!!!,neu,n
 97,@siaraaaa deck....... of cards,pos,n
@@ -314,7 +314,7 @@ saying",neu,n
 114,he like pink and whiteeeee,neu,n
 115,what if what i want to achieve is you,neu,n
 116,bruhh the shadow i think i shockk @brightwin_phongdang @brightwinvachirawit3,neg,n
-117,my bae,pos,n
+117,my bae,pos,y
 118,omghaadd,pos,n
 119,he is in singapore????,pos,n
 120,@shahana my man my man,pos,n
@@ -343,10 +343,10 @@ i heard something else the first time i watched it.",pos,n
 142,awww so cutee,neu,n
 143,suaranya deeptalk able,neu,n
 144,si bro ay good english speaker,neu,n
-145,cincin dijari manis ga pernah ketinggalan ya bright,neu,y
+145,cincin dijari manis ga pernah ketinggalan ya bright,neu,n
 146,el acento por dios que acento mas bonito,neg,n
 147,no entendi nada pero te amo bright,neg,n
-148,huy anong sabi mo,neu,y
+148,huy anong sabi mo,neu,n
 149,c'est le prochain bl ?,neu,n
 150,@ann/budzanek jego angielskie,neu,n
 151,"ya ampun sayang, ganteng banget",pos,n
@@ -355,7 +355,7 @@ i heard something else the first time i watched it.",pos,n
 154,me encanta su voz en ingles es mas suave,neu,n
 155,is it really him? i can't believe it,neu,n
 156,eu te amo bright,neu,n
-157,@dev waktu nunjukin foto di akun ig ke2 nya kek kenal itu bayangan siapa,neu,n
+157,@dev waktu nunjukin foto di akun ig ke2 nya kek kenal itu bayangan siapa,neu,y
 158,@ sein englisch,neu,n
 159,anh da bao fl r thi ko the ko fl dc cac ba a :),pos,n
 160,"que bueno q entiendo ingles
@@ -407,20 +407,20 @@ ame esto",neg,n
 6,"i think this mindset is quite common in asian countries, especially with older generations.",pos,n
 7,indeed. parents who treated their kids like investment or retirement plan usually the,pos,n
 8,"as a child of abused and neglect, i agree with her. parents can't expect when you don't do right by your kids,",neu,n
-9,"as i grow older, i realise my parents are walking",pos,y
+9,"as i grow older, i realise my parents are walking",pos,n
 10,my parents are expecting me to pay all of my college tuition back to them for the next 20 years of my life,neu,n
 11,i think parents with a good relationship with the kids don't even have to ask. kids will automatically take care of them.,neu,n
 12,as a person should be grateful for all the love and good things happen to you.,pos,n
 13,"in most cases, parents chose to have us, we didn't choose to be born lol",neu,n
 14,"nigerian parents are on this table, when i told my friend i didn't want kids, he said who will look after you when you are old",neu,n
-15,be the type of parent that your child will want to take care of when you're older.,neu,y
+15,be the type of parent that your child will want to take care of when you're older.,neu,n
 16,"@tiredboiboi very interesting comments here. i think even though they gave us traumas, the more we should give them $$ even if it's little. it shows how much of a forgiving and bigger person u are. but thats only if u are strong enough to have that mindset.",pos,n
 17,you own them your life .,neg,n
 18,"told my mum i'm not gonna take care of her when she's old and not visit her. i can do that if i loved her, but it's not my job as her child",pos,y
 19,"if you expect your parents to give the best, why you want them to not expect anything from you.",neu,n
 20,my uncle once said to me that he is helping me with paying for studying so i can help him in future...i mean i should be thankful but is it how it's working?,neu,n
-21,i've been told this by my mom since i was 5,neu,y
-22,"this system worked better when the wife's was at home and the husband's worked, you can still take care of them but it's so much more difficult",neu,n
+21,i've been told this by my mom since i was 5,neu,n
+22,"this system worked better when the wife's was at home and the husband's worked, you can still take care of them but it's so much more difficult",neg,n
 23,not sure if it's an asian thing but most parents treats their children as roi,neu,n
 24,this year my mom ask me about money 5x every month and each time = 1h. once when aunt come over she said she ask me food but she didn't give me money.,neu,n
 25,i think a lot of parents realize that having kids sucks and they need to give it a purpose. i don't think parents would really want a caregiver role,neu,n
@@ -434,10 +434,10 @@ ame esto",neg,n
 33,older parents like my parents thinks like the first person said. but we think like the 2nd person said lol.,neu,n
 34,"my mother needs to hear this, she thinks i owe her the world because she decided to give birth to me",neu,n
 35,"wat u talking...like pap mah, gst bonus u now, but after tat u better be filial n pay back",neu,n
-36,my mom said a fortune teller told her she would live off the fruits of her eldest son. i'm the only son.. lol,neu,y
+36,my mom said a fortune teller told her she would live off the fruits of her eldest son. i'm the only son.. lol,neu,n
 37,@denimjacquet @pluv0n faxx,neu,n
 38,@li4 :3 literally our parents,neu,n
-39,telling this every morning to my cats. i let them to sleep most of the day and go to toilet with me!,neu,y
+39,telling this every morning to my cats. i let them to sleep most of the day and go to toilet with me!,neu,n
 40,"honestly this. my parents never really paid attention to me as a child but now that i'm a working adult, they are trying everything to get me.",neu,n
 41,@hillarynnn1 good vid,neu,n
 42,"@y u h @ @<3 @worm :) ""your parents didn't you leave you when you were young so don't leave them when you're old"" did i ask to be born????",neu,n
@@ -449,13 +449,13 @@ ame esto",neg,n
 48,"correct they never owed the parents anything , so i think after 18 years old..they should be independently financial and do not expect a single cents",neu,n
 49,i will support my parents but i am also preparing for my old age so my kids will not have to be obligated to me.,neu,n
 50,there is risks in every investment if their looking at us as a retirement plan,neu,n
-51,three girls and not once have i thought about them having to look after me when i am old (hopefully i get old). a retirement home will be just fine so they won't even have to worry about me but can visit on occasion.,neu,y
-52,"i will break this for my son. i hate the pressure that comes from this. my parents are great, love them alot but they do have abit of this mindset.",neu,n
+51,three girls and not once have i thought about them having to look after me when i am old (hopefully i get old). a retirement home will be just fine so they won't even have to worry about me but can visit on occasion.,neu,n
+52,"i will break this for my son. i hate the pressure that comes from this. my parents are great, love them alot but they do have abit of this mindset.",neu,y
 53,my father literally called me his investment plan,neu,n
 54,this is why i won't have kids. i dont have good examples and also... my parents are like kids that i have to care for,neu,n
 55,literally my mum,pos,n
 56,can't wait to ghost my mom and her acting all suprised. this is 1000% true.,neu,n
-57,@kehan_h literally my family the whole reason behind having sehaj,neu,y
+57,@kehan_h literally my family the whole reason behind having sehaj,neu,n
 58,if you tell me to do it i won't.,neu,n
 59,my kids are my only hope for retirement,neu,n
 60,would never give parents a single cent & they know + accept it - a deep subconscious within them that they knew they weren't good parents anyway,neu,n
@@ -471,7 +471,7 @@ ame esto",neg,n
 70,"in fact if you raised them well and took care of them , your children will always want to take care of you when u old",neu,n
 71,the more you tell me that i have to do something the less i want to actually do it,neg,n
 72,omg thank you sm for this,pos,n
-73,not all parents. it's definitely a cultural thing.,pos,n
+73,not all parents. it's definitely a cultural thing.,pos,y
 74,i would only do it if i have the means and they were a good parent.,neg,n
 75,this is so true !!!!,neu,n
 76,"i feel obligated to take care of then since their golden child and favorite can't step up and support them as they get older, i'm just the backup plan",neu,n
@@ -490,9 +490,9 @@ ame esto",neg,n
 89,its more like the other way around,neu,n
 90,whether retirement plan or not...am taking care of them. there is no other relation as pure as with my parents,neg,n
 91,my parents told me that i am the second parent to my siblings like i'm the 2nd mother and i was kid at that time,neg,n
-92,if your a good parent they're most likely going to take care of you but trying to manipulate them into doing what you want is not gonna help you,neu,y
-93,or some parents view their kids as an extension of themselves...,neg,y
-94,this is also a generation gap problem. no amount of talking and explaining will help them understand,neu,n
+92,if your a good parent they're most likely going to take care of you but trying to manipulate them into doing what you want is not gonna help you,neu,n
+93,or some parents view their kids as an extension of themselves...,neg,n
+94,this is also a generation gap problem. no amount of talking and explaining will help them understand,neu,y
 95,i pass my mum the price of my bto and told her i don't have the financial capacity to support her and she agrees.,pos,n
 96,to the one in the middle !,neu,n
 97,say these to my parents and they'll throw a fit lol,pos,n
@@ -516,7 +516,7 @@ then the son is bringing money to the house",pos,n
 114,i'm glad my parents don't have this expectation for me or my siblings. but they do remind us that they would appreciate it if we do support them,neu,n
 115,"if you raise your kids right , why would they not want to take care of you when you're older",neu,n
 116,all my parents gave me was trauma. you mean i should reciprocate and give them what they gave me?,neg,n
-117,i'm finally on the right side of tiktok,pos,n
+117,i'm finally on the right side of tiktok,pos,y
 118,well said,pos,n
 119,this tho!!!!,pos,n
 120,"i just talk to my belgian hubby about it.it was like that before but thanks to pension,it is a bonus that the kids visit their parents",pos,n
@@ -544,10 +544,10 @@ then the son is bringing money to the house",pos,n
 142,all brown parents need to see this,neu,n
 143,lmao may dad told me he cant rely on my :),neu,n
 144,so true,neu,n
-145,"in reality deep down people always expect something from someone to do or not to do all the time ,that's why we hurts n painful with relationships",neu,y
+145,"in reality deep down people always expect something from someone to do or not to do all the time ,that's why we hurts n painful with relationships",neu,n
 146,yesyesyesyesyes,neg,n
 147,ayo in in the pacific also,neg,n
-148,i'm south africa we call that blacktax. where parents feel entitled to be taken care of.,neu,y
+148,i'm south africa we call that blacktax. where parents feel entitled to be taken care of.,neu,n
 149,yes!,neu,n
 150,@germaine i thought the first part was a given.. like uk??,neu,n
 151,my bro literally got hit 1000000x just because he played video games for an hour,pos,n
@@ -556,7 +556,7 @@ then the son is bringing money to the house",pos,n
 154,love this,neu,n
 155,one thousand percent,neu,n
 156,i wish i can send this to my parents rn,neu,n
-157,i really like what the middle girl said at the end i feel like people don't say this enough in conversations like this thank you,neu,n
+157,i really like what the middle girl said at the end i feel like people don't say this enough in conversations like this thank you,neu,y
 158,@val so real,neu,n
 159,so any of them have kids?,pos,n
 160,my parents had me to save their marriage now they are divorced and i'm living with my aunt....,neg,n
@@ -611,20 +611,20 @@ then the son is bringing money to the house",pos,n
 6,what the hell was the hug,pos,n
 7,oh no. the wife is still saying thankyou and hugging him,pos,n
 8,good life together aaaaaaa gemassshhhh,neu,n
-9,romance,pos,y
+9,romance,pos,n
 10,"omg, so sweet",neu,n
 11,please make more of this contenttttt,neu,n
 12,so cute,pos,n
 13,5 years not long i dated 10 years before i thought of ok we should be married by now and covid happen so yeah let's get married babe,neu,n
 14,awwwww,neu,n
-15,aiyo why no shoes or slippers for the boy ha ?,neu,y
+15,aiyo why no shoes or slippers for the boy ha ?,neu,n
 16,the guy is just shy y'all need to be chill,pos,n
 17,we don't talk that much,neg,n
 18,cute and mommy is so pretty and adorable,pos,y
 19,"no ""i love you "" from her husband ??",neu,n
 20,she's amazing,neu,n
-21,awww cute,neu,y
-22,n`ngsaawkhunmikh brmwuthi khaa,neu,n
+21,awww cute,neu,n
+22,n`ngsaawkhunmikh brmwuthi khaa,neg,n
 23,hwaanchammaak so sweet!!~,neu,n
 24,lin yang dipeluk malah mc nya @naa.ty,neu,n
 25,awkward hug nalito ba sya sino dapat ihhug nya,neu,n
@@ -638,10 +638,10 @@ then the son is bringing money to the house",pos,n
 33,hope u guys break up soon,neu,n
 34,guys the girl is a sister of a thai celebrity. it's normal for her to be expressive or good at interviews. the guys could just be shy. it's normal. touch some grass yall,neu,n
 35,hope u break up soon,neu,n
-36,this host eq damn high - lean it to hug the wife after the husband hugged her,neu,y
+36,this host eq damn high - lean it to hug the wife after the husband hugged her,neu,n
 37,@rewishen harkhoe,neu,n
 38,minniin`ngsaawmiksaamiiebnch,neu,n
-39,okhrtnaarak aeng,neu,y
+39,okhrtnaarak aeng,neu,n
 0,i'll call her mommy,neu,n
 1,i've been training to be a househusband my whole life. i deserve it,neu,n
 2,even as a girl i. if he is higher than ne by a small or medium then np but if he is extremely rich that would make feel awkward,neu,n
@@ -651,21 +651,21 @@ then the son is bringing money to the house",pos,n
 6,"did you date to feel ego or to feel love. as long the partner is there & you both enjoy each other. as you given her what she wanted, a love one.",pos,n
 7,"so what if the girl is way richer than you?? so what? if you truly love each other, money is nothing, there's nothing wrong",pos,n
 8,why her voice sound very familiar. is she radio announcer?,neu,n
-9,bro if she's rich that's a w for me,pos,y
+9,bro if she's rich that's a w for me,pos,n
 10,it's really a big gap and probably 2 different world. love might conquer everything for start but ultimately that's not enough,neu,n
 11,i had this once but i didn't know for a few months till i asked her if i could have some change and she gave me $200. i thought it was odd at first.,neu,n
 12,this conversation is so constructive makes me want more,pos,n
 13,is this a singaporean show?,neu,n
 14,@josh.goldstein i wish,neu,n
-15,id pay for the places that i can afford and let her do her magic for the places that i cant,neu,y
+15,id pay for the places that i can afford and let her do her magic for the places that i cant,neu,n
 16,"it's irrelevant, doesn't matter who brings in the most money, as long as you are happy together",pos,n
 17,i couldn't find u on apple podcast,neg,n
 18,"what is the lady's name?
 aww..i like the way she speaks. and she l looks elegant.",pos,y
 19,i leave,neu,n
 20,care about character and don't think too much into things. speak your mind when things bother you. simple. talk things out,neu,n
-21,wait why does she have to be a tycoons daughter to be wealthy?,neu,y
-22,"i wouldn't feel comfortable not because i'm a man, but because of my character. i wouldn't want her to think i'm there 4 the money. i'd work hard...",neu,n
+21,wait why does she have to be a tycoons daughter to be wealthy?,neu,n
+22,"i wouldn't feel comfortable not because i'm a man, but because of my character. i wouldn't want her to think i'm there 4 the money. i'd work hard...",neg,n
 23,just drop the ego and see where it goes,neu,n
 24,@nellislm idk man we seem q okay tgt,neu,n
 25,"if she agreed to go out with you, it means fancy places are not hindrances",neu,n
@@ -679,10 +679,10 @@ aww..i like the way she speaks. and she l looks elegant.",pos,y
 33,mummy,neu,n
 34,what if the guy is extremely rich..will she feel pressured too??,neu,n
 35,i did . there was not much pressure . but the realty hits when you meet the dad. then wow.. u realise it's either you become a ms man or be yr own man,neu,n
-36,"if she is flexing daddy's money then meh, if its hers, then lets see.",neu,y
+36,"if she is flexing daddy's money then meh, if its hers, then lets see.",neu,n
 37,auto give up,neu,n
 38,nothing wrong with a girl that makes way more than i do and has the right morales,neu,n
-39,"nah man, she rich, she paying for dinner lmaoooo, she want me to do the housework too? ayo househusband time",neu,y
+39,"nah man, she rich, she paying for dinner lmaoooo, she want me to do the housework too? ayo househusband time",neu,n
 40,"this only applies of the girl is more wealthy than the guy, because it's more acceptable that the guy makes more money in the relationship",neu,n
 41,dream girl,neu,n
 42,aiya tiam la sonia,neu,n
@@ -694,13 +694,13 @@ aww..i like the way she speaks. and she l looks elegant.",pos,y
 48,similar for friendships too,neu,n
 49,still in search of rich lady,neu,n
 50,really it's on her vibe,neu,n
-51,nahhh if shes wealthy imma be the in home dad and support my wife all the way,neu,y
-52,can be girlfriend only not wife...,neu,n
+51,nahhh if shes wealthy imma be the in home dad and support my wife all the way,neu,n
+52,can be girlfriend only not wife...,neu,y
 53,say less,neu,n
 54,when wealth come i want to make my life better than before... but do not look down on people whether rich or poor because they have darkness side...,neu,n
 55,i actually don't mind,pos,n
 56,nope,neu,n
-57,@b0doh scared the rich girl end up meet some rich guy same level as her then go for the same lvl guy know,neu,y
+57,@b0doh scared the rich girl end up meet some rich guy same level as her then go for the same lvl guy know,neu,n
 58,the guilt,neu,n
 59,it's a bonus,neu,n
 60,i'd keep it real! and eat there once or twice and then next time we're going to a place i can actually afford.,neu,n
@@ -716,7 +716,7 @@ aww..i like the way she speaks. and she l looks elegant.",pos,y
 70,tell me you rich but don't,neu,n
 71,"yeah it happened to me , i felt so guilty because i'm not that financially stable to afford such fancy dinner",neg,n
 72,i mean if they can help me land a better job with good chance to move up,pos,n
-73,that's mommy right there,pos,n
+73,that's mommy right there,pos,y
 74,if it was me it must be suffocating i cant,neg,n
 75,within the next week i would be on my knee with a ring,neu,n
 76,"100%. especially for guys who have self respect, they would defs feel the pressure",neu,n
@@ -735,9 +735,9 @@ aww..i like the way she speaks. and she l looks elegant.",pos,y
 89,true,neu,n
 90,i would call her mommy. i'll do whatever she wants.,neg,n
 91,"the thing is most fancy restaurants doesn't really worth the price, they're overpriced af",neg,n
-92,ill make sure that tycoon daughter carry may child,neu,y
-93,if she didn't work for it ..it wont mean shit.,neg,y
-94,look if she's got good attitude. in my case she wasn't and she only cared abt fancy stuff and spoiled af. she ended up with some sports car guy tho.,neu,n
+92,ill make sure that tycoon daughter carry may child,neu,n
+93,if she didn't work for it ..it wont mean shit.,neg,n
+94,look if she's got good attitude. in my case she wasn't and she only cared abt fancy stuff and spoiled af. she ended up with some sports car guy tho.,neu,y
 95,"just enjoy the moment, she is paying she is lonely she needs it, u like her she likes u",pos,n
 96,"cap! it changes nothing, she will also want gifts from you the small things go a long way. both parties just need to be real to each other.",neu,n
 97,perfecf,pos,n
@@ -760,7 +760,7 @@ aww..i like the way she speaks. and she l looks elegant.",pos,y
 114,"if that happens to me, i'm willing to risk it all",neu,n
 115,@anna oh,neu,n
 116,wouldnt work for me. idk why ppl want their partner to pay for stuff for me its uncomfortable,neg,n
-117,she's beautiful,pos,n
+117,she's beautiful,pos,y
 118,"nahhhh i""ll beeee excited asss hellll",pos,n
 119,both of you look so perfect with each other,pos,n
 120,"if you actually liked her and she was cool, try something she wouldn't expect.",pos,n
@@ -788,10 +788,10 @@ aww..i like the way she speaks. and she l looks elegant.",pos,y
 142,if a woman is richer than you. she will appreciate you being genuine and sincere than your wealth or lack there of,neu,n
 143,give it to me,neu,n
 144,if u feel pressured u are not meant to be with her. being in a relationship is also knowing how to be mature about stuff.,neu,n
-145,she low-key has a nigerian accent,neu,y
+145,she low-key has a nigerian accent,neu,n
 146,"if you can't support her financial, there a lot of other stuff she need i'm sure you can think of something",neg,n
 147,it's outside your control. as long as she doesn't look down on you bc of it then no problem,neg,n
-148,she looks like hwasa,neu,y
+148,she looks like hwasa,neu,n
 149,her views on things and morals should be the things to look out for,neu,n
 150,definitely... hmmm,neu,n
 151,"i think it's good to tell your partner about it. ask her about her opinion and how she'd like to go about it. don't be scared, she chose you",pos,n
@@ -801,7 +801,7 @@ jk",neg,n
 154,high ses,neu,n
 155,"reminds me of crazy rich asian ""it's not my job to make you feel like a man"" ..",neu,n
 156,so whats the point of this vid,neu,n
-157,"i would eat with her, but i wonder am i the side chick?",neu,n
+157,"i would eat with her, but i wonder am i the side chick?",neu,y
 158,"that's why in islam we have to be ""sekufu"" meaning socially and financially at similar level coz all come with their own lifestyle. not a must",neu,n
 159,i think i'd just enjoy it,pos,n
 160,"a man is natural provider, we will spend based on what we can afford. so we wont feel comfortable.",neg,n

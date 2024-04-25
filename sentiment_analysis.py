@@ -3,28 +3,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 from sklearn.preprocessing import LabelEncoder
-import comment_parser as cparse
+from comment_parser import CommentParser
 
 
 class SentimentAndToxicityAnalyzer:
-    """
-    A class to store the sentiment analysis outputs of 'pysentimiento', create a confusion matrix
-    and explore the sentences in different quadrants of that matrix.
-    ...
-
-    Attributes
-    ----------
-    file_location : str
-        the location of the file that contains the sentences and the 'ground truth'
-
-    Methods
-    -------
-    confusion_matrix():
-        displays a 3x3 confusion matrix using  seaborn
-
-    examine_labels(actual,predicted):
-        returns a dataframe with the sentences that match a specific actual/predicted pair
-    """
 
     def __init__(self, file, mode):
         df = pd.read_excel(file, index_col=0)
@@ -56,8 +38,8 @@ class SentimentAndToxicityAnalyzer:
         for k, v in df.iterrows():
             comment = v["Comments"]
             ground_truth = v["ground truth"]
-            translated_comment = cparse.translate_comment(comment).text
-            cleaned_comment = cparse.clean_comment(translated_comment)
+            translated_comment = CommentParser.translate_comment(comment).text
+            cleaned_comment = CommentParser.clean_comment(translated_comment, ["hi"])
             if cleaned_comment is None:
                 if mode == "toxicity":
                     label = "n"
@@ -65,11 +47,12 @@ class SentimentAndToxicityAnalyzer:
                     label = "neu"
             else:
                 if mode == "toxicity":
-                    label = cparse.comment_toxicity(cleaned_comment)
-                    if label == "y":
-                        print(comment)
+                    label = CommentParser.comment_toxicity(translated_comment)
+                    # if label == "y":
+                    #     print(CommentParser.full_comment_toxicity(translated_comment))
+                    #     print(comment)
                 else:
-                    label = cparse.comment_sentiment(cleaned_comment).output.lower()
+                    label = CommentParser.comment_sentiment(cleaned_comment).output.lower()
             df.loc[k, "prediction"] = label
 
             if label != ground_truth:
@@ -94,13 +77,14 @@ class SentimentAndToxicityAnalyzer:
     def confusion_matrix(self):
         """plots the confusion matrix using seaborn"""
         plt.figure(figsize=(7, 5))
+        print(self.cm_df)
         sns.heatmap(self.cm_df, annot=True, cmap='PuBuGn')
         plt.title('Confusion Matrix')
         plt.ylabel('Actual label')
         plt.xlabel('Predicted label')
         plt.show()
 
-    def examine_labels(self, actual="pos", predicted="pos"):
+    def examine_labels(self, actual, predicted):
         """examines the labels give an actual/predicted pair; prints the number of matches
         and returns the matches as a df"""
         pd.set_option('display.max_colwidth', None)
